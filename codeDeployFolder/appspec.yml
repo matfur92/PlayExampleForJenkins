@@ -1,0 +1,17 @@
+version: 0.0
+
+os: linux
+
+hooks:
+
+ BeforeInstall:
+
+   - location: codeDeployFolder/beforecicd.sh
+
+     runas: root
+
+AfterInstall:
+
+   - location: codeDeployFolder/aftercicd.sh
+
+     runas: root

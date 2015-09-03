@@ -6,17 +6,17 @@ hooks:
 
 files:
    - source: /
-     destination: /var/www
+     destination: /
 
 BeforeInstall:
 
-   - location: stopServer.sh
+   - location: codeDeployFolder/stopServer.sh
 
      runas: root
 
 
 AfterInstall:
 
-   - location: startServer.sh
+   - location: codeDeployFolder/startServer.sh
 
      runas: root

@@ -6,7 +6,7 @@ hooks:
 
 files:
    - source: /
-     destination: /
+     destination: /var/www
 
 BeforeInstall:
 

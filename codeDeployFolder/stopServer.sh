@@ -1,3 +1,3 @@
 #!/bin/bash
-pkill -f java
-sleep 10
+sudo pkill -f java
+sudo sleep 10

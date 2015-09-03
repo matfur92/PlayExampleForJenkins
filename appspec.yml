@@ -10,13 +10,13 @@ files:
 
 BeforeInstall:
 
-   - location: codeDeployFolder/stopServer.sh
+   - location: /var/www/codeDeployFolder/stopServer.sh
 
      runas: root
 
 
 AfterInstall:
 
-   - location: codeDeployFolder/startServer.sh
+   - location: /var/www/codeDeployFolder/startServer.sh
 
      runas: root

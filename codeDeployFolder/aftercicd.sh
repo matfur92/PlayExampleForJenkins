@@ -1,1 +1,0 @@
-nohup /var/www/bin/playexample -Dhttp.port=80 1>/dev/null 2>&1 &

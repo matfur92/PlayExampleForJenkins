@@ -9,7 +9,3 @@ libraryDependencies ++= Seq(
   "org.webjars" % "bootstrap" % "2.3.1")
 
 playJavaSettings
-
-mappings in Universal ++=
-  (baseDirectory.value / "codeDeployFolder" * "*" get) map
-    (x => x -> ("codeDeployFolder/" + x.getName))

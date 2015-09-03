@@ -1,0 +1,22 @@
+version: 0.0
+
+os: linux
+
+hooks:
+
+files:
+   - source: /
+     destination: /var/www
+
+BeforeInstall:
+
+   - location: stopServer.sh
+
+     runas: root
+
+
+AfterInstall:
+
+   - location: startServer.sh
+
+     runas: root
